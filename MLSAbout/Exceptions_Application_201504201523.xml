@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?><events><event className="InsTech.Instrumentation.ErrorEvent">
+  <property name="StackTrace" value="at InsTech.ForeSight.SalesPortal.ReportManager.RunCalcs(CalculationRequest request)&#xD;&#xA;at InsTech.ForeSight.SalesPortal.ReportManager.RenderReports(ReportRequest request)&#xD;&#xA;at InsTech.ForeSight.SalesPortal.ACCUL.ReportManager.RenderReports(ReportRequest request)&#xD;&#xA;at InsTech.ForeSight.SalesPortal.ModuleServiceManager.RenderReports(TxnReportRequest request)&#xD;&#xA;at InsTech.ForeSight.BusinessServiceAgent.RenderReports(ITDataContainer entity, ReportRequest request, List`1 requiredCalculations, TxnReportRequest serviceRequest)&#xD;&#xA;at InsTech.ForeSight.BusinessServiceAgent.RenderReports(ITDataContainer entity, List`1 requiredCalculations)&#xD;&#xA;at InsTech.ForeSight.SalesPortal.ProductWorkflow.Controller.RenderReports()&#xD;&#xA;at InsTech.ForeSight.SalesPortal.ProductWorkflow.Controller.RenderAndCacheReports()&#xD;&#xA;at InsTech.ForeSight.SalesPortal.ProductWorkflow.Web.PageService.RenderReports(Guid tokenId)&#xD;&#xA;at System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct&amp; sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)&#xD;&#xA;at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)&#xD;&#xA;at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;&#xA;at System.Web.Script.Services.WebServiceMethodData.CallMethod(Object target, IDictionary`2 parameters)&#xD;&#xA;at System.Web.Script.Services.RestHandler.InvokeMethod(HttpContext context, WebServiceMethodData methodData, IDictionary`2 rawParams)&#xD;&#xA;at System.Web.Script.Services.RestHandler.ExecuteWebServiceCall(HttpContext context, WebServiceMethodData methodData)&#xD;&#xA;at System.Web.Script.Services.HandlerWrapper.ProcessRequest(HttpContext context)&#xD;&#xA;at InsTech.ForeSight.SalesPortal.Web.HandlerWrapper.ProcessRequest(HttpContext context)&#xD;&#xA;at System.Web.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)&#xD;&#xA;at System.Web.PipelineStepManager.ResumeSteps(Exception error)&#xD;&#xA;at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)&#xD;&#xA;at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)&#xD;&#xA;at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)&#xD;&#xA;at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)&#xD;&#xA;at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)&#xD;&#xA;at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)" />
+  <property name="Depth" value="0" />
+  <property name="EventSourceName" value="Application" />
+  <property name="RootRequestInstance" value="ce78930ebc29422795c1a8c8d422525a" />
+  <property name="RequestInstance" value="3e0a7f48d6c2438d99da10e5021b8794" />
+  <property name="RequestSequenceNumber" value="179" />
+  <property name="TimeStamp" value="2015-04-20T15:23:57.8769992-04:00" />
+  <property name="AppDomain" value="/LM/W3SVC/1/ROOT/MLI-2-130740086117681411" />
+  <property name="ProcessId" value="6912" />
+  <property name="MachineName" value="METINTB1684" />
+  <property name="ProcessName" value="c:\windows\system32\inetsrv\w3wp.exe" />
+  <property name="ThreadName" value="" />
+  <property name="UserName" value="NT AUTHORITY\NETWORK SERVICE" />
+  <property name="Message" value="Exception ID: dd47055f5982463bac0f533b71d56b36&#xD;&#xA;Error:Engine failed running ModelType 'Primary'." />
+  <property name="HelpLink" value="" />
+  <property name="Source" value="" />
+  <property name="MessageID" value="ExceptionMessageEnum.EngineRunError" />
+  <property name="TargetSite" value="" />
+  <property name="ExceptionTypeName" value="InsTech.ForeSight.IllustServicesException" />
+  <property name="ExceptionID" value="dd47055f5982463bac0f533b71d56b36" />
+  <array name="Properties" length="1">
+    <child className="InsTech.Instrumentation.Serialization.NameValuePair" childExists="true">
+      <property name="Name" value="Data" />
+      <property name="Value" value="System.Collections.ListDictionaryInternal" />
+    </child>
+  </array>
+  <array name="AdditionalInfo" length="0" />
+  <array name="ExceptionExtraInfo" length="0" />
+  <array name="MessageArgs" length="1">
+    <property name="" value="Primary" />
+  </array>
+  <array name="InnerExceptions" length="1">
+    <child className="InsTech.Instrumentation.ErrorEventBase" childExists="true">
+      <property name="StackTrace" value="   at System.Globalization.TextInfo.nativeChangeCaseString(Int32 win32LangID, Void* pNativeTextInfo, String str, Boolean isToUpper)&#xD;&#xA;   at InsTech.ForeSight.ITDataRow.get_Item(String columnName, ITRowDataVersion dataVersion)&#xD;&#xA;   at InsTech.ForeSight.LiteralExpression.Evaluate(IContext context)&#xD;&#xA;   at InsTech.ForeSight.AndExpression.Evaluate(IContext context)&#xD;&#xA;   at InsTech.ForeSight.ITDataView.Select(String selectExpression)&#xD;&#xA;   at InsTech.ForeSight.RuleDataProvider.GetValue[ValueType](Int32 keyId, Int32 category)&#xD;&#xA;   at InsTech.ForeSight.SalesPortal.ACCUL.Rules.MaturityYear()&#xD;&#xA;   at InsTech.ForeSight.SalesPortal.ACCUL.Calculations.Accumulator.Accumulate(Int32 startYear, Int32 endYear)&#xD;&#xA;   at InsTech.ForeSight.SalesPortal.ACCUL.Calculations.SolvePremiumLevel.SetAndRun()&#xD;&#xA;   at InsTech.ForeSight.SalesPortal.ACCUL.Calculations.Solve.Search()&#xD;&#xA;   at InsTech.ForeSight.SalesPortal.ACCUL.Calculations.Solve.PerformSolve(Int32 modelType, Dictionary`2 solveResults)&#xD;&#xA;   at InsTech.ForeSight.SalesPortal.ACCUL.Calculations.ModelController.PerformSolves(Int32 modelType)&#xD;&#xA;   at InsTech.ForeSight.SalesPortal.ACCUL.Calculations.ModelController.RunModel(ModelRequest modelRequest, ModelReaderCol existingReaders)&#xD;&#xA;   at InsTech.ForeSight.SalesPortal.ACCUL.Calculations.ModelController.RunPolicyModels(CalculationRequest request)&#xD;&#xA;   at InsTech.ForeSight.SalesPortal.ACCUL.CalculationManager.Run(CalculationRequest calcRequest)&#xD;&#xA;   at InsTech.ForeSight.SalesPortal.ReportManager.RunCalcs(CalculationRequest request)" />
+      <property name="Depth" value="1" />
+      <property name="TimeStamp" value="2015-04-20T15:23:57.8769992-04:00" />
+      <property name="Message" value="Thread was being aborted." />
+      <property name="HelpLink" value="" />
+      <property name="Source" value="mscorlib" />
+      <property name="MessageID" value="" />
+      <property name="TargetSite" value="nativeChangeCaseString" />
+      <property name="ExceptionTypeName" value="System.Threading.ThreadAbortException" />
+      <property name="ExceptionID" value="" />
+      <array name="Properties" length="2">
+        <child className="InsTech.Instrumentation.Serialization.NameValuePair" childExists="true">
+          <property name="Name" value="ExceptionState" />
+          <property name="Value" value="System.Web.HttpApplication+CancelModuleException" />
+        </child>
+        <child className="InsTech.Instrumentation.Serialization.NameValuePair" childExists="true">
+          <property name="Name" value="Data" />
+          <property name="Value" value="System.Collections.ListDictionaryInternal" />
+        </child>
+      </array>
+      <array name="AdditionalInfo" length="0" />
+      <array name="ExceptionExtraInfo" length="0" />
+      <array name="MessageArgs" length="0" />
+    </child>
+  </array>
+</event><event className="InsTech.Instrumentation.ErrorEvent">
+  <property name="StackTrace" value="at InsTech.ForeSight.SalesPortal.ModuleServiceManager.RenderReports(TxnReportRequest request)&#xD;&#xA;at InsTech.ForeSight.BusinessServiceAgent.RenderReports(ITDataContainer entity, ReportRequest request, List`1 requiredCalculations, TxnReportRequest serviceRequest)&#xD;&#xA;at InsTech.ForeSight.BusinessServiceAgent.RenderReports(ITDataContainer entity, List`1 requiredCalculations)&#xD;&#xA;at InsTech.ForeSight.SalesPortal.ProductWorkflow.Controller.RenderReports()&#xD;&#xA;at InsTech.ForeSight.SalesPortal.ProductWorkflow.Controller.RenderAndCacheReports()&#xD;&#xA;at InsTech.ForeSight.SalesPortal.ProductWorkflow.Web.PageService.RenderReports(Guid tokenId)&#xD;&#xA;at System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct&amp; sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)&#xD;&#xA;at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)&#xD;&#xA;at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;&#xA;at System.Web.Script.Services.WebServiceMethodData.CallMethod(Object target, IDictionary`2 parameters)&#xD;&#xA;at System.Web.Script.Services.RestHandler.InvokeMethod(HttpContext context, WebServiceMethodData methodData, IDictionary`2 rawParams)&#xD;&#xA;at System.Web.Script.Services.RestHandler.ExecuteWebServiceCall(HttpContext context, WebServiceMethodData methodData)&#xD;&#xA;at System.Web.Script.Services.HandlerWrapper.ProcessRequest(HttpContext context)&#xD;&#xA;at InsTech.ForeSight.SalesPortal.Web.HandlerWrapper.ProcessRequest(HttpContext context)&#xD;&#xA;at System.Web.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)&#xD;&#xA;at System.Web.PipelineStepManager.ResumeSteps(Exception error)&#xD;&#xA;at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)&#xD;&#xA;at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)&#xD;&#xA;at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)&#xD;&#xA;at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)&#xD;&#xA;at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)&#xD;&#xA;at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)" />
+  <property name="Depth" value="0" />
+  <property name="EventSourceName" value="Application" />
+  <property name="RootRequestInstance" value="ce78930ebc29422795c1a8c8d422525a" />
+  <property name="RequestInstance" value="a94d2219fd914c4c99ab1c3896efdfc8" />
+  <property name="RequestSequenceNumber" value="185" />
+  <property name="TimeStamp" value="2015-04-20T15:23:57.9549997-04:00" />
+  <property name="AppDomain" value="/LM/W3SVC/1/ROOT/MLI-2-130740086117681411" />
+  <property name="ProcessId" value="6912" />
+  <property name="MachineName" value="METINTB1684" />
+  <property name="ProcessName" value="c:\windows\system32\inetsrv\w3wp.exe" />
+  <property name="ThreadName" value="" />
+  <property name="UserName" value="NT AUTHORITY\NETWORK SERVICE" />
+  <property name="Message" value="Exception ID: 415b01098fb94343843ab54ec86b3efe&#xD;&#xA;Call to IllustServices Failed.  Review inner exception for details." />
+  <property name="HelpLink" value="" />
+  <property name="Source" value="" />
+  <property name="MessageID" value="ExceptionMessageEnum.CallFailed" />
+  <property name="TargetSite" value="" />
+  <property name="ExceptionTypeName" value="InsTech.ForeSight.IllustServicesException" />
+  <property name="ExceptionID" value="415b01098fb94343843ab54ec86b3efe" />
+  <array name="Properties" length="1">
+    <child className="InsTech.Instrumentation.Serialization.NameValuePair" childExists="true">
+      <property name="Name" value="Data" />
+      <property name="Value" value="System.Collections.ListDictionaryInternal" />
+    </child>
+  </array>
+  <array name="AdditionalInfo" length="0" />
+  <array name="ExceptionExtraInfo" length="0" />
+  <array name="MessageArgs" length="0" />
+  <array name="InnerExceptions" length="2">
+    <child className="InsTech.Instrumentation.ErrorEventBase" childExists="true">
+      <property name="StackTrace" value="   at InsTech.ForeSight.SalesPortal.ReportManager.RunCalcs(CalculationRequest request)&#xD;&#xA;   at InsTech.ForeSight.SalesPortal.ReportManager.RenderReports(ReportRequest request)&#xD;&#xA;   at InsTech.ForeSight.SalesPortal.ACCUL.ReportManager.RenderReports(ReportRequest request)&#xD;&#xA;   at InsTech.ForeSight.SalesPortal.ModuleServiceManager.RenderReports(TxnReportRequest request)" />
+      <property name="Depth" value="1" />
+      <property name="TimeStamp" value="2015-04-20T15:23:57.9549997-04:00" />
+      <property name="Message" value="Exception ID: dd47055f5982463bac0f533b71d56b36&#xD;&#xA;Error:Engine failed running ModelType 'Primary'." />
+      <property name="HelpLink" value="" />
+      <property name="Source" value="InsTech.ForeSight.Business" />
+      <property name="MessageID" value="ExceptionMessageEnum.EngineRunError" />
+      <property name="TargetSite" value="RunCalcs" />
+      <property name="ExceptionTypeName" value="InsTech.ForeSight.IllustServicesException" />
+      <property name="ExceptionID" value="dd47055f5982463bac0f533b71d56b36" />
+      <array name="Properties" length="1">
+        <child className="InsTech.Instrumentation.Serialization.NameValuePair" childExists="true">
+          <property name="Name" value="Data" />
+          <property name="Value" value="System.Collections.ListDictionaryInternal" />
+        </child>
+      </array>
+      <array name="AdditionalInfo" length="0" />
+      <array name="ExceptionExtraInfo" length="0" />
+      <array name="MessageArgs" length="1">
+        <property name="" value="Primary" />
+      </array>
+    </child>
+    <child className="InsTech.Instrumentation.ErrorEventBase" childExists="true">
+      <property name="StackTrace" value="   at System.Globalization.TextInfo.nativeChangeCaseString(Int32 win32LangID, Void* pNativeTextInfo, String str, Boolean isToUpper)&#xD;&#xA;   at InsTech.ForeSight.ITDataRow.get_Item(String columnName, ITRowDataVersion dataVersion)&#xD;&#xA;   at InsTech.ForeSight.LiteralExpression.Evaluate(IContext context)&#xD;&#xA;   at InsTech.ForeSight.AndExpression.Evaluate(IContext context)&#xD;&#xA;   at InsTech.ForeSight.ITDataView.Select(String selectExpression)&#xD;&#xA;   at InsTech.ForeSight.RuleDataProvider.GetValue[ValueType](Int32 keyId, Int32 category)&#xD;&#xA;   at InsTech.ForeSight.SalesPortal.ACCUL.Rules.MaturityYear()&#xD;&#xA;   at InsTech.ForeSight.SalesPortal.ACCUL.Calculations.Accumulator.Accumulate(Int32 startYear, Int32 endYear)&#xD;&#xA;   at InsTech.ForeSight.SalesPortal.ACCUL.Calculations.SolvePremiumLevel.SetAndRun()&#xD;&#xA;   at InsTech.ForeSight.SalesPortal.ACCUL.Calculations.Solve.Search()&#xD;&#xA;   at InsTech.ForeSight.SalesPortal.ACCUL.Calculations.Solve.PerformSolve(Int32 modelType, Dictionary`2 solveResults)&#xD;&#xA;   at InsTech.ForeSight.SalesPortal.ACCUL.Calculations.ModelController.PerformSolves(Int32 modelType)&#xD;&#xA;   at InsTech.ForeSight.SalesPortal.ACCUL.Calculations.ModelController.RunModel(ModelRequest modelRequest, ModelReaderCol existingReaders)&#xD;&#xA;   at InsTech.ForeSight.SalesPortal.ACCUL.Calculations.ModelController.RunPolicyModels(CalculationRequest request)&#xD;&#xA;   at InsTech.ForeSight.SalesPortal.ACCUL.CalculationManager.Run(CalculationRequest calcRequest)&#xD;&#xA;   at InsTech.ForeSight.SalesPortal.ReportManager.RunCalcs(CalculationRequest request)" />
+      <property name="Depth" value="2" />
+      <property name="TimeStamp" value="2015-04-20T15:23:57.9549997-04:00" />
+      <property name="Message" value="Thread was being aborted." />
+      <property name="HelpLink" value="" />
+      <property name="Source" value="mscorlib" />
+      <property name="MessageID" value="" />
+      <property name="TargetSite" value="nativeChangeCaseString" />
+      <property name="ExceptionTypeName" value="System.Threading.ThreadAbortException" />
+      <property name="ExceptionID" value="" />
+      <array name="Properties" length="2">
+        <child className="InsTech.Instrumentation.Serialization.NameValuePair" childExists="true">
+          <property name="Name" value="ExceptionState" />
+          <property name="Value" value="System.Web.HttpApplication+CancelModuleException" />
+        </child>
+        <child className="InsTech.Instrumentation.Serialization.NameValuePair" childExists="true">
+          <property name="Name" value="Data" />
+          <property name="Value" value="System.Collections.ListDictionaryInternal" />
+        </child>
+      </array>
+      <array name="AdditionalInfo" length="0" />
+      <array name="ExceptionExtraInfo" length="0" />
+      <array name="MessageArgs" length="0" />
+    </child>
+  </array>
+</event><event className="InsTech.Instrumentation.ErrorEvent">
+  <property name="StackTrace" value="at System.Web.HttpApplication.RaiseOnError()&#xD;&#xA;at System.Web.PipelineStepManager.ResumeSteps(Exception error)&#xD;&#xA;at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)&#xD;&#xA;at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)&#xD;&#xA;at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)&#xD;&#xA;at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)&#xD;&#xA;at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)&#xD;&#xA;at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)" />
+  <property name="Depth" value="0" />
+  <property name="EventSourceName" value="Application" />
+  <property name="RootRequestInstance" value="ce78930ebc29422795c1a8c8d422525a" />
+  <property name="RequestInstance" value="f5a2048b7cc14e5499ece23884265ef6" />
+  <property name="RequestSequenceNumber" value="186" />
+  <property name="TimeStamp" value="2015-04-20T15:23:57.9861999-04:00" />
+  <property name="AppDomain" value="/LM/W3SVC/1/ROOT/MLI-2-130740086117681411" />
+  <property name="ProcessId" value="6912" />
+  <property name="MachineName" value="METINTB1684" />
+  <property name="ProcessName" value="c:\windows\system32\inetsrv\w3wp.exe" />
+  <property name="ThreadName" value="" />
+  <property name="UserName" value="NT AUTHORITY\NETWORK SERVICE" />
+  <property name="Message" value="Request timed out." />
+  <property name="HelpLink" value="" />
+  <property name="Source" value="" />
+  <property name="MessageID" value="" />
+  <property name="TargetSite" value="" />
+  <property name="ExceptionTypeName" value="System.Web.HttpException" />
+  <property name="ExceptionID" value="" />
+  <array name="Properties" length="2">
+    <child className="InsTech.Instrumentation.Serialization.NameValuePair" childExists="true">
+      <property name="Name" value="ErrorCode" />
+      <property name="Value" value="-2147467259" />
+    </child>
+    <child className="InsTech.Instrumentation.Serialization.NameValuePair" childExists="true">
+      <property name="Name" value="Data" />
+      <property name="Value" value="System.Collections.ListDictionaryInternal" />
+    </child>
+  </array>
+  <array name="AdditionalInfo" length="7">
+    <child className="InsTech.Instrumentation.Serialization.NameValuePair" childExists="true">
+      <property name="Name" value="RawURL" />
+      <property name="Value" value="/MLI/ProductWorkflow/PageService.asmx/RenderReports" />
+    </child>
+    <child className="InsTech.Instrumentation.Serialization.NameValuePair" childExists="true">
+      <property name="Name" value="Browser" />
+      <property name="Value" value="Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko" />
+    </child>
+    <child className="InsTech.Instrumentation.Serialization.NameValuePair" childExists="true">
+      <property name="Name" value="Referrer" />
+      <property name="Value" value="https://qa2.quote-fse.investmet.com/MLI/ProductWorkflow/ReportDisplay.rspx?NavToRptStream=yes&amp;SessionTokenId=89f9390a-ad61-4d79-b6dc-dc483c117027" />
+    </child>
+    <child className="InsTech.Instrumentation.Serialization.NameValuePair" childExists="true">
+      <property name="Name" value="NSC_JOchtkjseev5mmddznqmseddeaflzc3" />
+      <property name="Value" value="ffffffffaf10921f45525d5f4f58455e445a4a422947" />
+    </child>
+    <child className="InsTech.Instrumentation.Serialization.NameValuePair" childExists="true">
+      <property name="Name" value="ASP.NET_SessionId" />
+      <property name="Value" value="4xsfk2fo1twwjd45po5sqwqr" />
+    </child>
+    <child className="InsTech.Instrumentation.Serialization.NameValuePair" childExists="true">
+      <property name="Name" value="NSC_bqq.rb2.rvpuf-gtf.jowftunfu.dpn" />
+      <property name="Value" value="ffffffffaf10d30c45525d5f4f58455e445a4a421177" />
+    </child>
+    <child className="InsTech.Instrumentation.Serialization.NameValuePair" childExists="true">
+      <property name="Name" value="SMSESSION" />
+      <property name="Value" value="udAwgfUYOudLvXWNjYiN7mEk9ZwzLsjsNRugvncrBweTYv2Pcvy2JxI88f0qk0xP4cS5ltt1quSwJkhimz3JRUilGmZznWGLkUPUEzTOIl2VJo/7gCDpIUjYnmswMDRzSU+kTie3sMBN89fPiXorfguHrUJOzCxUbGUumi6wVX9/w5iy0tdAPvNGdht3ofBfSHWExHTP0Vw8SK+hUbgRc/SPPd2FMgDnam2kBfGBqwWwL1pRI/Kg/53y2ls2FkibhiDjvrL7NCX0Rsx6iZMgCRoi0edmgIe+nr4bDbVULqyzGyMIadnCyOl4UqSVRvqVIGBuBYNBd58pMfjVxKCNhZBopgm4CsGrEiKHDoeuY7ZTGP2LkJssEBqEOiPxCXy0rciEmichKwfIqNkiIxOHK5ZNrgxtG8+QfqnQYlbCfMOQA17bMGzNklWRyB/xnBWl/HSO+73Qb9m2pYuk7+h9pk3gI34rrJPq9vyyCZXMBO/FfMuuL7ogw3KtN3AGfSCAkf3Ta9MNVkUuBdASsiQ6w7oQqA9hq8IFTS+Sjm6Ui1njKhIxeihvURF+ZJERPBKxc9nmYcjcRQDxMqh0Wk/wrUeCXHvooHKM4CgQI9GxFNWghwR9ugiv37BGPFqYDB+Um7AspJ7D/GREeJJqtr3RG+jat1ArPiX+VCzNUAarp6bqeF27a86mNtUkKfTXgVLDX7HVqeHt7rx9MwMR6nLXofroE4Ps8wsBJAUjOipz6Goaya1qU0tgi78yHxT+2ZAXwRVHfNtYvV9x89boNlraG7da/meVA/StGluR1bqvfGoYWXVOcphciNrcV4l+9ymRTWFAw5KsEJquhmNeVzOmUURs0A8pIFcOR9Paj/bmIK9VPtKey8qgah9jn7xYA1YFtRXvN4inq/ZY3Oh2kfPIMCoL9nkz6EL5bAL3UEjyJDBBef/UVGiRygDc/bINpy4Vud58hEirKjd/BaaXeaqJb+FK0sTlFwGKtYdigGUfkKmffZDYtZrl4gGcRKTFinSknhwTw30l6PnPV1yGZkMl1tlgkKVqthAQprQRrlgHrdqlPqAcEjoJOWtzRJZfe3TRVU5xgUh9cr3g/aH2Rr+IgoIwttKzYIUW3J1IwR/A7czANYbRvr28860UchbM8z/Q" />
+    </child>
+  </array>
+  <array name="ExceptionExtraInfo" length="0" />
+  <array name="MessageArgs" length="0" />
+  <array name="InnerExceptions" length="0" />
+</event><event className="InsTech.Instrumentation.ErrorEvent">
+  <property name="StackTrace" value="at System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct&amp; sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)&#xD;&#xA;at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)&#xD;&#xA;at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;&#xA;at System.Web.Script.Services.WebServiceMethodData.CallMethod(Object target, IDictionary`2 parameters)&#xD;&#xA;at System.Web.Script.Services.RestHandler.InvokeMethod(HttpContext context, WebServiceMethodData methodData, IDictionary`2 rawParams)&#xD;&#xA;at System.Web.Script.Services.RestHandler.ExecuteWebServiceCall(HttpContext context, WebServiceMethodData methodData)&#xD;&#xA;at System.Web.Script.Services.HandlerWrapper.ProcessRequest(HttpContext context)&#xD;&#xA;at InsTech.ForeSight.SalesPortal.Web.HandlerWrapper.ProcessRequest(HttpContext context)&#xD;&#xA;at System.Web.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)&#xD;&#xA;at System.Web.PipelineStepManager.ResumeSteps(Exception error)&#xD;&#xA;at System.Web.HttpApplication.BeginProcessRequestNotification(HttpContext context, AsyncCallback cb)&#xD;&#xA;at System.Web.HttpRuntime.ProcessRequestNotificationPrivate(IIS7WorkerRequest wr, HttpContext context)&#xD;&#xA;at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)&#xD;&#xA;at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)&#xD;&#xA;at System.Web.Hosting.PipelineRuntime.ProcessRequestNotificationHelper(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)&#xD;&#xA;at System.Web.Hosting.PipelineRuntime.ProcessRequestNotification(IntPtr managedHttpContext, IntPtr nativeRequestContext, IntPtr moduleData, Int32 flags)" />
+  <property name="Depth" value="0" />
+  <property name="EventSourceName" value="Application" />
+  <property name="RootRequestInstance" value="264cb763c1144ead8234197ac315bfe6" />
+  <property name="RequestInstance" value="854630b00c9348e4803d9a92d3127078" />
+  <property name="RequestSequenceNumber" value="2" />
+  <property name="TimeStamp" value="2015-04-20T15:23:58.0954006-04:00" />
+  <property name="AppDomain" value="/LM/W3SVC/1/ROOT/MLI-2-130740086117681411" />
+  <property name="ProcessId" value="6912" />
+  <property name="MachineName" value="METINTB1684" />
+  <property name="ProcessName" value="c:\windows\system32\inetsrv\w3wp.exe" />
+  <property name="ThreadName" value="" />
+  <property name="UserName" value="NT AUTHORITY\NETWORK SERVICE" />
+  <property name="Message" value="Exception ID: fa0da42b26f547f0beae2e92040ccb91&#xD;&#xA;ForeSight.Ajax received a non-JSON response from the server." />
+  <property name="HelpLink" value="" />
+  <property name="Source" value="" />
+  <property name="MessageID" value="ExceptionMessageEnum.Unknown" />
+  <property name="TargetSite" value="" />
+  <property name="ExceptionTypeName" value="InsTech.Instrumentation.InsTechException" />
+  <property name="ExceptionID" value="fa0da42b26f547f0beae2e92040ccb91" />
+  <array name="Properties" length="1">
+    <child className="InsTech.Instrumentation.Serialization.NameValuePair" childExists="true">
+      <property name="Name" value="Data" />
+      <property name="Value" value="System.Collections.ListDictionaryInternal" />
+    </child>
+  </array>
+  <array name="AdditionalInfo" length="0" />
+  <array name="ExceptionExtraInfo" length="4">
+    <child className="InsTech.Instrumentation.Serialization.NameValuePair" childExists="true">
+      <property name="Name" value="ResponseText" />
+      <property name="Value" value="&lt;html&gt;&#xD;&#xA;    &lt;head&gt;&#xD;&#xA;        &lt;title&gt;Request timed out.&lt;/title&gt;&#xD;&#xA;        &lt;style&gt;&#xD;&#xA;         body {font-family:'Verdana';font-weight:normal;font-size: .7em;color:black;} &#xD;&#xA;         p {font-family:'Verdana';font-weight:normal;color:black;margin-top: -5px}&#xD;&#xA;         b {font-family:'Verdana';font-weight:bold;color:black;margin-top: -5px}&#xD;&#xA;         H1 { font-family:'Verdana';font-weight:normal;font-size:18pt;color:red }&#xD;&#xA;         H2 { font-family:'Verdana';font-weight:normal;font-size:14pt;color:maroon }&#xD;&#xA;         pre {font-family:'Lucida Console';font-size: .9em}&#xD;&#xA;         .marker {font-weight: bold; color: black;text-decoration: none;}&#xD;&#xA;         .version {color: gray;}&#xD;&#xA;         .error {margin-bottom: 10px;}&#xD;&#xA;         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }&#xD;&#xA;        &lt;/style&gt;&#xD;&#xA;    &lt;/head&gt;&#xD;&#xA;&#xD;&#xA;    &lt;body bgcolor='white'&gt;&#xD;&#xA;&#xD;&#xA;            &lt;span&gt;&lt;H1&gt;Server Error in '/MLI' Application.&lt;hr width=100% size=1 color=silver&gt;&lt;/H1&gt;&#xD;&#xA;&#xD;&#xA;            &lt;h2&gt; &lt;i&gt;Request timed out.&lt;/i&gt; &lt;/h2&gt;&lt;/span&gt;&#xD;&#xA;&#xD;&#xA;            &lt;font face='Arial, Helvetica, Geneva, SunSans-Regular, sans-serif '&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; Description: &lt;/b&gt;An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.&#xD;&#xA;&#xD;&#xA;            &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt; Exception Details: &lt;/b&gt;System.Web.HttpException: Request timed out.&lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt;Source Error:&lt;/b&gt; &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;table width=100% bgcolor='#ffffcc'&gt;&#xD;&#xA;               &lt;tr&gt;&#xD;&#xA;                  &lt;td&gt;&#xD;&#xA;                      &lt;code&gt;&#xD;&#xA;&#xD;&#xA;An unhandled exception was generated during the execution of the current web request. Information regarding the origin and location of the exception can be identified using the exception stack trace below.&lt;/code&gt;&#xD;&#xA;&#xD;&#xA;                  &lt;/td&gt;&#xD;&#xA;               &lt;/tr&gt;&#xD;&#xA;            &lt;/table&gt;&#xD;&#xA;&#xD;&#xA;            &lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt;Stack Trace:&lt;/b&gt; &lt;br&gt;&lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;table width=100% bgcolor='#ffffcc'&gt;&#xD;&#xA;               &lt;tr&gt;&#xD;&#xA;                  &lt;td&gt;&#xD;&#xA;                      &lt;code&gt;&lt;pre&gt;&#xD;&#xA;&#xD;&#xA;[HttpException (0x80004005): Request timed out.]&#xD;&#xA;&lt;/pre&gt;&lt;/code&gt;&#xD;&#xA;&#xD;&#xA;                  &lt;/td&gt;&#xD;&#xA;               &lt;/tr&gt;&#xD;&#xA;            &lt;/table&gt;&#xD;&#xA;&#xD;&#xA;            &lt;br&gt;&#xD;&#xA;&#xD;&#xA;            &lt;hr width=100% size=1 color=silver&gt;&#xD;&#xA;&#xD;&#xA;            &lt;b&gt;Version Information:&lt;/b&gt;&amp;nbsp;Microsoft .NET Framework Version:2.0.50727.5485; ASP.NET Version:2.0.50727.5483&#xD;&#xA;&#xD;&#xA;            &lt;/font&gt;&#xD;&#xA;&#xD;&#xA;    &lt;/body&gt;&#xD;&#xA;&lt;/html&gt;&#xD;&#xA;&lt;!-- &#xD;&#xA;[HttpException]: Request timed out.&#xD;&#xA;--&gt;&lt;!-- &#xD;&#xA;This error page might contain sensitive information because ASP.NET is configured to show verbose error messages using &amp;lt;customErrors mode='Off'/&amp;gt;. Consider using &amp;lt;customErrors mode='On'/&amp;gt; or &amp;lt;customErrors mode='RemoteOnly'/&amp;gt; in production environments.--&gt;" />
+    </child>
+    <child className="InsTech.Instrumentation.Serialization.NameValuePair" childExists="true">
+      <property name="Name" value="TokenId" />
+      <property name="Value" value="89f9390a-ad61-4d79-b6dc-dc483c117027" />
+    </child>
+    <child className="InsTech.Instrumentation.Serialization.NameValuePair" childExists="true">
+      <property name="Name" value="OriginalParameters" />
+      <property name="Value" value="{0:'89f9390a-ad61-4d79-b6dc-dc483c117027'}" />
+    </child>
+    <child className="InsTech.Instrumentation.Serialization.NameValuePair" childExists="true">
+      <property name="Name" value="WebMethod" />
+      <property name="Value" value="/MLI/ProductWorkflow/PageService.asmx/RenderReports" />
+    </child>
+  </array>
+  <array name="MessageArgs" length="0" />
+  <array name="InnerExceptions" length="0" />
+</event></events>
