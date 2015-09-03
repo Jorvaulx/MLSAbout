@@ -1,0 +1,133 @@
+
+// Font Awesome
+@import "fontAwesome/animated.less";
+@import "fontAwesome/bordered-pulled.less";
+@import "fontAwesome/core.less";
+@import "fontAwesome/fixed-width.less";
+@import "fontAwesome/font-awesome.less";
+@import "fontAwesome/icons.less";
+@import "fontAwesome/larger.less";
+@import "fontAwesome/list.less";
+
+// Core variables and mixins
+@import "bootstrap/mixins/gradients.less";
+@import "bootstrap/variables.less";
+@import "bootstrap/bootstrap.less";
+@import "bootswatch/variables.less";
+@import "bootswatch/bootswatch.less"; 
+
+
+body {
+  overflow-x: hidden;
+    font-family: Helvetica,Arial,sans-serif;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  background-color: #272b2e;
+}
+
+.form-box {
+    margin-top: 20px;
+    padding: 40px 20px 20px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* ===========================================================================================
+NAVBAR AND LAYOUT
+=========================================================================================== */
+.left-col {
+  position: absolute;
+  left: 0;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+  width: 10%;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#484e55, #3a3f44 60%, #313539);
+}
+.right-col {
+  position: absolute;
+  right: 0;
+  padding: 25px 0;
+  top: 0;
+  bottom: 0;
+  width: 90%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: #EAEAEA;
+}
+
+.sidebar-nav .navbar {
+  background-color: transparent;
+  border-color: transparent;
+  background-image: none;
+  border: none;
+}
+  
+.sidebar-nav .navbar .navbar-collapse {
+  padding: 0;
+  max-height: none;
+}
+.sidebar-nav .navbar ul {
+  float: none;
+  display: block;
+}
+.sidebar-nav .navbar li {
+  float: none;
+  display: block;
+  font-size: 1em;
+}
+.sidebar-nav .navbar li a {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #ccc;
+}
+.sidebar-nav .navbar li:hover {
+  background-color: #000;
+}
+.sidebar-nav .navbar li:hover a {
+  color: #fff;
+}
+.sidebar-nav .navbar li span {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s linear;
+  -moz-transition: opacity 0.25s linear;
+  -webkit-transition: opacity 0.25s linear;
+  }
+.sidebar-nav .navbar li:hover span,
+.sidebar-nav .navbar li.active span {
+  opacity: 1.0;
+  visibility: visible;
+}
+.sidebar-nav .navbar li.active:hover a{
+
+}
+.sidebar-nav .navbar li.active {
+  border-left: none;
+  border-right: none;
+}
+.sidebar-nav .navbar li.active a {
+  color: #FFAC00;
+  background-color: #272b2e;
+}
+.sidebar-nav .navbar li.disabled {
+  cursor: not-allowed;
+  background-color: transparent;
+}
+.sidebar-nav .navbar li.disabled > a {
+  pointer-events: none;
+  opacity: 0.25;
+}
+.sidebar-nav .navbar .navbar-nav > li > a {
+  border: none;
+}
+
+// Modal Window
+.app-modal-window {
+  width: 346px;
+}
