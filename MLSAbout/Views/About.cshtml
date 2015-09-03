@@ -1,0 +1,12 @@
+﻿@{
+    Layout = null;
+}
+
+<h1 class="text-capitalize"><line-title text="$state.current.name"></line-title></h1>
+<ul class="nav nav-tabs">
+    <li role="presentation"><a ui-sref="Production.logs">Logs</a></li>
+    <li role="presentation"><a ui-sref="Production.database">Database</a></li>
+    <li role="presentation"><a href="#">Portal</a></li>
+    <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+<div ui-view></div>

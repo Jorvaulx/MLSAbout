@@ -1,0 +1,13 @@
+﻿<div>
+    <div class="modal-header">
+        <h3 class="modal-title">Date/Time Picker</h3>
+    </div>
+    <div class="modal-body">
+        <datepicker ng-model="dDate" min-date="minDate" show-weeks="true" class="well well-sm"></datepicker><br />
+        <timepicker ng-model="dDate" ng-change="changed()" hour-step="hstep" minute-step="mstep" show-meridian="true"></timepicker><br />
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="ok()">OK</button>
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+    </div>
+</div>

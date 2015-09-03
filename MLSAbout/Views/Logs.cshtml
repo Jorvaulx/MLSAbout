@@ -1,0 +1,16 @@
+﻿@{
+    Layout = null;
+}
+
+<div class="row">
+    <div class="col-md-3">
+        <button ng-click="open('start')" class="btn btn-default form-control"><span style="color: aqua">Start:</span> {{log.dStartDate | date:'fullDate'}} {{log.dStartDate | date:'shortTime'}}</button>
+    </div>
+    <div class="col-md-3">
+        <button ng-click="open('end')" class="btn btn-default form-control"><span style="color: aqua">End:</span> {{log.dEndDate | date:'fullDate'}} {{log.dEndDate | date:'shortTime'}}</button>
+    </div>
+</div>
+<button ng-click="showLogs()">Show</button>
+<div id="log">{{content}}</div>
+
+
