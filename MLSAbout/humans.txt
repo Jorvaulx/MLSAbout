@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Dorian Puerta -- Developer -- <twitter>
+
+# THANKS
+
+    MetLife
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    AngularJS, jQuery, Bootstrap

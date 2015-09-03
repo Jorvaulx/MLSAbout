@@ -1,0 +1,2 @@
+// Run this on command line in IIS Express folder 
+appcmd set config /section:staticContent /+[fileExtension='.woff2',mimeType='text/plain']
